@@ -1,11 +1,11 @@
 from django.shortcuts import render
 
 
-def product_view():
+def products_view():
     pass
 
 
-def category_view():
+def categories_view():
     pass
 
 
