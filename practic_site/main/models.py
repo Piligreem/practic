@@ -1,30 +1,29 @@
 from django.db import models
 
 
-class Vendor(models.Model):
-    name = models.CharField(default='Noname', max_length=150)
-
-    def __str__(self):
-        return self.name
-
-
-class Category(models.Model):
-    title = models.CharField(default='Untitled', max_length=150)
+class Pizza(models.Model):
+    title = models.CharField(default='Untitled', max_length=50)
+    cost = models.IntegerField(default=400)
 
     def __str__(self):
         return self.title
 
 
-class Product(models.Model):
-    title = models.CharField(default='Untitled', max_length=150)
-    buy_rating = models.IntegerField(default=0)
-    vendor = models.ForeignKey(Vendor, on_delete=models.CASCADE)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+class Buyer(models.Model):
+    email = models.EmailField(max_length=80)
+    name = models.CharField(max_length=100)
+    number = models.IntegerField(default=0)
 
     def __str__(self):
-        return self.title
+        return self.email
 
-    def buy(self):
-        self.buy_rating += 1
+
+class Order(models.Model):
+    buyer = models.ForeignKey(Buyer, on_delete=models.CASCADE)
+    
+
+class OrderElement(models.Model):
+    pizza_id = models.ForeignKey(Pizza, on_delete=models.CASCADE)
+    order_id = models.ForeignKey(Order, on_delete=models.CASCADE)
 
 

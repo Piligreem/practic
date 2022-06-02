@@ -1,23 +1,13 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
 
-def products_view(request):
-    if request.method == 'GET':
-       pass 
+def main_view(request):
+    # return HttpResponse('<h1>Hello world!<h1>')
+    return render(request, 'main/index.html')
 
 
-def categories_view(request):
-    if request.method == 'GET':
-        pass
-
-
-def vendors_view(request):
-    if request.method == 'GET':
-        pass
-
-
-def buy_view(request):
-    if request.method == 'POST':
-        pass
+def cart_view(request):
+    pass
 
 
