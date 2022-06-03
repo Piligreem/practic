@@ -1,4 +1,5 @@
 {% load static %}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -13,7 +14,7 @@ background-color: white;
 .had {
 width: 100%;
 height: 980px;
-background-image: url(img/shapka_dark.jpg);
+background-image: url(../images/shapka.jpg);
 background-size: cover;
 }
 
@@ -60,19 +61,19 @@ color: white;
 .vk_pic {
 	width: 70%;
 	height: 70%;
-	background-image: url(img/vk2.png);
+	background-image: url(../images/vk2.png);
 	background-size: cover;
 }
 .tg_pic {
 	width: 70%;
 	height: 70%;
-	background-image: url(img/vk2.png);
+	background-image: url(../images/vk2.png);
 	background-size: cover;
 }
 .tw_pic {
 	width: 70%;
 	height: 70%;
-	background-image: url(img/vk2.png);
+	background-image: url(../images/vk2.png);
 	background-size: cover;
 }
 .number p {
@@ -116,8 +117,7 @@ color: white;
 	border-radius: 35px;
 	font-size: 20px;
 	font-family: Arial;
-	color: black;
-	font-weight: bold;
+	color: black; font-weight: bold;
 	background: white;
 	transition: 0.5s;
 
@@ -169,7 +169,8 @@ color: white;
 	color: black;
 	font-weight: bold;
 }
-.text2 p { font-size: 50px;
+.text2 p {
+	font-size: 50px;
 	font-family: Arial;
 	color: black;
 }
@@ -524,3 +525,4 @@ align-items: center;
 	font-weight: bold;
 	transition: 0.5s;
 }
+

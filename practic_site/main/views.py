@@ -8,6 +8,6 @@ def main_view(request):
 
 
 def cart_view(request):
-    pass
+    return render(request, 'main/index2.html')
 
 

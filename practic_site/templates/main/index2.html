@@ -1,0 +1,42 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link type="text/css" href="{% static 'main/css/style.css' %}" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cart</title>
+</head>
+<body>
+    <div class="container">
+        <div class="order-panel">
+            <div class="panel-header">
+                <h3>Ваш заказ:</h3>
+            </div>  
+            <div class="pizza-order">
+
+            </div>  
+            <div class="order-cost">
+                <h5>Сумма: </h5> <div class="sum"></div>
+            </div> 
+            <div class="customer-name">
+                <p>Ваше имя</p>
+                <input type="text">
+            </div>
+            <div class="customer-email">
+                <p>Ваш Email</p>
+                <input type="text">
+            </div>  
+            <div class="customer-phone">
+                <p>Ваш телефон</p>
+                <input type="number">
+            </div>
+            <div class="checkout">
+                <button><p>Оформить заказ</p></button>
+            </div>         
+        </div>
+    </div>
+</body>
+</html>

@@ -1,14 +1,13 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'index.css' %}">
+	<link type="text/css" href="{% static 'main/css/index.css' %}" rel="stylesheet">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 </head>
 <body>
-
 <div class="main">
 	<div class="had">
 	<div class="contacts">
@@ -40,7 +39,27 @@
 			<div class="item">
 			<div class="item_anim">
 				<div class="image_block">
-                    <div class="image"><img src="{% static 'img/pizza.png' %}" alt=""></div>	
+					<div class="image"><img src="{% static 'main/images/pizza.png' %}" alt=""></div>
+				</div>
+				<div class="text_block">
+				<div class="content">
+					<div class="details">
+
+						<h2>"Название"<br><span>Цена</span></h2>
+						<div class="info">
+							<h3>Состав:<br><span>Помидорка, огурчик, ананасик, курочка</span></h3>
+						</div>
+                        <div class="btn"><button>В корзину</button></div>
+					</div>
+
+				</div>	
+				</div>
+			</div>
+			</div>
+			<div class="item">
+			<div class="item_anim">
+				<div class="image_block">
+				<div class="image"><img src="{%static 'main/images/pizza.png'%}" alt=""></div>
 				</div>
 				<div class="text_block">
 				<div class="content">
@@ -60,7 +79,7 @@
 			<div class="item">
 			<div class="item_anim">
 				<div class="image_block">
-				<div class="image"><img src="{% static 'img/pizza.png' %}" alt=""></div>	
+				<div class="image"><img src="{%static 'main/images/pizza.png'%}" alt=""></div>
 				</div>
 				<div class="text_block">
 				<div class="content">
@@ -80,7 +99,7 @@
 			<div class="item">
 			<div class="item_anim">
 				<div class="image_block">
-				<div class="image"><img src="{% static 'img/pizza.png' %}" alt=""></div>	
+				<div class="image"><img src="{%static 'main/images/pizza.png'%}" alt=""></div>
 				</div>
 				<div class="text_block">
 				<div class="content">
@@ -100,7 +119,7 @@
 			<div class="item">
 			<div class="item_anim">
 				<div class="image_block">
-				<div class="image"><img src="{% static 'img/pizza.png' %}" alt=""></div>	
+				<div class="image"><img src="{%static 'main/images/pizza.png'%}" alt=""></div>
 				</div>
 				<div class="text_block">
 				<div class="content">
@@ -120,27 +139,7 @@
 			<div class="item">
 			<div class="item_anim">
 				<div class="image_block">
-				<div class="image"><img src="{% static 'img/pizza.png' %}" alt=""></div>	
-				</div>
-				<div class="text_block">
-				<div class="content">
-					<div class="details">
-
-						<h2>"Название"<br><span>Цена</span></h2>
-						<div class="info">
-							<h3>Состав:<br><span>Помидорка, огурчик, ананасик, курочка</span></h3>
-						</div>
-						<div class="btn"><button>В корзину</button></div>
-					</div>
-
-				</div>	
-				</div>
-			</div>
-			</div>
-			<div class="item">
-			<div class="item_anim">
-				<div class="image_block">
-				<div class="image"><img src="{% static 'img/pizza.png' %}" alt=""></div>	
+				<div class="image"><img src="{%static 'main/images/pizza.png'%}" alt=""></div>
 				</div>
 				<div class="text_block">
 				<div class="content">
@@ -173,6 +172,7 @@
 			<div class="button2"><button><a href="#2">В начало</a></button></div>
 		</div>
 	</div>
+
 
 
 
